@@ -1,0 +1,425 @@
+<title>Tax Fairness Coalition — 2027 Priorities: What the Poll Said</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ash:#CAD2C5; --teal:#84A98C; --deep:#52796F; --slate:#354F52; --char:#2F3E46;
+    --bg:#FBFCFA;
+    --panel:#FFFFFF;
+    --ink:#222E33;
+    --ink-soft:#5A6B6C;
+    --ink-faint:#8A9899;
+    --rule:#DCE3DC;
+    --accent:var(--deep);
+    --agree:#52796F;
+    --pass:#C4A23E;
+    --against:#A8603F;
+    --empty:#EDF1EC;
+    --shadow:0 1px 2px rgba(47,62,70,.06), 0 8px 24px -16px rgba(47,62,70,.30);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1B2427; --panel:#222D30; --ink:#E8EEE9; --ink-soft:#A9B8B4; --ink-faint:#7C8C8A;
+      --rule:#33413F; --accent:#9DBFA6; --agree:#8FB79A; --pass:#D9BE6E; --against:#C98862;
+      --empty:#2B3739; --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 28px -18px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1B2427; --panel:#222D30; --ink:#E8EEE9; --ink-soft:#A9B8B4; --ink-faint:#7C8C8A;
+    --rule:#33413F; --accent:#9DBFA6; --agree:#8FB79A; --pass:#D9BE6E; --against:#C98862;
+    --empty:#2B3739; --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+  :root[data-theme="light"]{
+    --bg:#FBFCFA; --panel:#FFFFFF; --ink:#222E33; --ink-soft:#5A6B6C; --ink-faint:#8A9899;
+    --rule:#DCE3DC; --accent:#52796F; --agree:#52796F; --pass:#C4A23E; --against:#A8603F;
+    --empty:#EDF1EC; --shadow:0 1px 2px rgba(47,62,70,.06), 0 8px 24px -16px rgba(47,62,70,.30);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Poppins","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  .sheet{max-width:60rem; margin:0 auto; padding:2.75rem 1.5rem 4rem;}
+  h1,h2,h3,.eyebrow,.num{font-family:"Manrope","Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+  .eyebrow{
+    font-size:.72rem; letter-spacing:.16em; text-transform:uppercase;
+    font-weight:700; color:var(--accent); margin:0 0 .6rem;
+  }
+  h1{
+    font-size:clamp(1.9rem,4.4vw,2.9rem); line-height:1.12; letter-spacing:-.022em;
+    font-weight:800; margin:0 0 .7rem; text-wrap:balance;
+  }
+  .standfirst{
+    font-size:1.06rem; color:var(--ink-soft); max-width:44rem; margin:0;
+  }
+  .meta{
+    margin-top:1.5rem; padding-top:1.1rem; border-top:2px solid var(--ink);
+    display:flex; flex-wrap:wrap; gap:1.75rem 2.5rem; align-items:flex-end;
+  }
+  .stat{display:flex; flex-direction:column; gap:.15rem;}
+  .stat .num{
+    font-size:1.85rem; font-weight:800; line-height:1; letter-spacing:-.02em;
+    font-variant-numeric:tabular-nums; color:var(--ink);
+  }
+  .stat .num .of{font-size:1.1rem; font-weight:700; color:var(--ink-faint);}
+  .stat .lbl{font-size:.76rem; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-faint); font-weight:600;}
+
+  .turnout{
+    margin-top:1.1rem; display:flex; flex-direction:column; gap:.4rem; max-width:32rem;
+  }
+  .turnout-bar{height:6px; border-radius:3px; background:var(--empty); overflow:hidden;}
+  .turnout-bar i{display:block; height:100%; background:var(--accent); border-radius:3px;}
+  .turnout p{margin:0; font-size:.83rem; color:var(--ink-faint); line-height:1.5;}
+  .turnout strong{color:var(--ink-soft); font-weight:700;}
+
+  section{margin-top:2.75rem;}
+  h2{
+    font-size:1.18rem; font-weight:800; letter-spacing:-.01em; margin:0 0 .35rem;
+  }
+  .sub{font-size:.92rem; color:var(--ink-soft); margin:0 0 1.15rem; max-width:46rem;}
+
+  .headline-box{
+    background:var(--panel); border:1px solid var(--rule); border-left:5px solid var(--accent);
+    border-radius:3px; padding:1.35rem 1.5rem; box-shadow:var(--shadow);
+    display:flex; flex-direction:column; gap:.6rem;
+  }
+  .headline-box p{margin:0; color:var(--ink-soft); font-size:.95rem;}
+  .headline-box .lede{color:var(--ink); font-size:1.12rem; font-weight:600; line-height:1.4; text-wrap:balance;}
+  .headline-box strong{color:var(--ink); font-weight:600;}
+
+  .tier{margin-bottom:2rem;}
+  .tier-head{
+    display:flex; align-items:baseline; gap:.75rem; flex-wrap:wrap;
+    padding-bottom:.5rem; border-bottom:1px solid var(--rule); margin-bottom:.35rem;
+  }
+  .tier-head h3{font-size:1rem; font-weight:800; margin:0; letter-spacing:-.005em;}
+  .tier-head .note{font-size:.82rem; color:var(--ink-faint); font-weight:500;}
+
+  ol.items{list-style:none; margin:0; padding:0;}
+  ol.items li{
+    display:grid; grid-template-columns:1fr 11.5rem; gap:.35rem 1.5rem;
+    align-items:center; padding:.72rem 0; border-bottom:1px solid var(--rule);
+  }
+  ol.items li:last-child{border-bottom:none;}
+  .idea{font-size:.97rem; line-height:1.35; font-weight:500;}
+  .idea .gloss{display:block; font-size:.82rem; color:var(--ink-faint); font-weight:400; margin-top:.15rem;}
+  .gauge{display:flex; flex-direction:column; gap:.3rem;}
+  .bar{display:flex; height:9px; border-radius:2px; overflow:hidden; background:var(--empty);}
+  .bar i{display:block; height:100%;}
+  .bar .a{background:var(--agree);}
+  .bar .p{background:var(--pass);}
+  .bar .d{background:var(--against);}
+  .tally{
+    font-size:.74rem; color:var(--ink-faint); font-variant-numeric:tabular-nums;
+    letter-spacing:.02em;
+  }
+  .tally b{color:var(--ink-soft); font-weight:700;}
+
+  .legend{
+    display:flex; flex-wrap:wrap; gap:.35rem 1.25rem; margin:.9rem 0 1.75rem;
+    font-size:.78rem; color:var(--ink-faint);
+  }
+  .legend span{display:inline-flex; align-items:center; gap:.4rem;}
+  .swatch{width:.7rem; height:.7rem; border-radius:2px; display:inline-block;}
+
+  .groups{display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1rem;}
+  .group{
+    background:var(--panel); border:1px solid var(--rule); border-radius:3px;
+    padding:1rem 1.1rem; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:.4rem;
+  }
+  .group .who{font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:var(--accent);}
+  .group h3{margin:0; font-size:1rem; font-weight:800; letter-spacing:-.005em;}
+  .group p{margin:0; font-size:.88rem; color:var(--ink-soft);}
+
+  .actions{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.7rem;}
+  .actions li{
+    display:grid; grid-template-columns:auto 1fr; gap:.85rem; align-items:start;
+    font-size:.95rem; color:var(--ink-soft);
+  }
+  .actions .k{
+    font-family:"Manrope","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:.68rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--panel); background:var(--accent); padding:.28rem .5rem; border-radius:2px;
+    white-space:nowrap; margin-top:.08rem;
+  }
+  .actions li strong{color:var(--ink); font-weight:600;}
+
+  footer{
+    margin-top:3rem; padding-top:1.1rem; border-top:1px solid var(--rule);
+    font-size:.8rem; color:var(--ink-faint); display:flex; flex-wrap:wrap; gap:.4rem 1.5rem;
+    justify-content:space-between;
+  }
+  footer a{color:var(--accent);}
+  footer a:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+  @media (max-width:34rem){
+    ol.items li{grid-template-columns:1fr;}
+    .gauge{max-width:14rem;}
+    .meta{gap:1.1rem 1.75rem;}
+  }
+
+  @media print{
+    :root{
+      --bg:#FBFCFA; --panel:#FFFFFF; --ink:#222E33; --ink-soft:#5A6B6C; --ink-faint:#8A9899;
+      --rule:#DCE3DC; --accent:#52796F; --agree:#52796F; --pass:#C4A23E; --against:#A8603F;
+      --empty:#EDF1EC; --shadow:none;
+    }
+    body{background:#fff;}
+    .sheet{max-width:100%; padding:0.25in 0.35in;}
+    * {-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+    section{margin-top:1.6rem; break-inside:avoid;}
+    .tier{break-inside:avoid;}
+    .groups{break-inside:avoid;}
+    .headline-box{box-shadow:none;}
+  }
+</style>
+
+<body>
+<div class="sheet">
+
+  <header>
+    <p class="eyebrow"></p>
+    <h1>Coalition Priorities Survey</h1>
+    <p class="standfirst">Results of the Pol.is poll on 2027 legislative priorities: 14 ideas, voted agree / disagree / pass.</p>
+
+    <div class="meta" style="position:relative">
+      <div class="stat"><span class="num">16<span class="of">/28</span></span><span class="lbl"><span>Members voted</span><span> · 57%</span></span></div>
+      <div class="stat"><span class="num">7</span><span class="lbl">Put up ideas</span></div>
+      <div class="stat"><span class="num">14</span><span class="lbl">Ideas on the table</span></div>
+      <div class="stat"><span class="num">157</span><span class="lbl">Votes cast</span></div>
+      <div class="stat"><span class="num">5</span><span class="lbl">Were "disagree"</span></div>
+    </div>
+    <div class="turnout">
+      <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 5.33 0.0625" class="chart" role="img" aria-label="Voted 16, Didn't vote 12" preserveAspectRatio="none" style="display:block;width:100%;height:0.0625in"><path d="M0.0310 0.0000H5.2990A0.0310 0.0310 0 0 1 5.3300 0.0310V0.0315A0.0310 0.0310 0 0 1 5.2990 0.0625H0.0310A0.0310 0.0310 0 0 1 0.0000 0.0315V0.0310A0.0310 0.0310 0 0 1 0.0310 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0310 0.0000H3.0457V0.0625H0.0310A0.0310 0.0310 0 0 1 0.0000 0.0315V0.0310A0.0310 0.0310 0 0 1 0.0310 0.0000Z" fill="#52796F"/><path d="M3.0457 0.0000H5.2990A0.0310 0.0310 0 0 1 5.3300 0.0310V0.0315A0.0310 0.0310 0 0 1 5.2990 0.0625H3.0457V0.0000Z" fill="#DCE3DC"/></svg></div></span><p><strong>16 of 28</strong> <span>invited coalition members cast at least one vote.</span></p>
+    </div>
+  </header>
+
+  <section>
+    <h2>14 ideas</h2>
+    <p class="sub">Each bar shows every voter: agree / pass / disagree / no vote.</p>
+
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--agree)"></i> <span>Agree</span></span>
+      <span><i class="swatch" style="background:var(--pass)"></i> <span>Pass / unsure</span></span>
+      <span><i class="swatch" style="background:var(--against)"></i> <span>Disagree</span></span>
+      <span><i class="swatch" style="background:var(--empty)"></i> <span>Didn't vote on it</span></span>
+    </div>
+
+    <div class="tier">
+      <div class="tier-head" style="position:relative">
+        <h3>Settled</h3>
+        <span class="note">Broad agreement, few passes, almost no opposition</span>
+      </div>
+      <ol class="items">
+        <li style="position:relative">
+          <span class="idea"><span>Conveyance tax reform</span><span class="gloss"></span></span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 13, Pass 2, Disagree 0, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.5600V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.5600 0.0000H1.8000V0.0940H1.5600V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>13 of 15</strong> votes agreed · 2 passes</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea">Save the working family tax credits set to expire</span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 10, Pass 1, Disagree 0, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.2000V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.2000 0.0000H1.3200V0.0940H1.2000V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>10 of 11</strong> votes agreed · 1 pass</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea">Tax capital gains at the same rate as ordinary income</span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 9, Pass 1, Disagree 1, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.0800V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.0800 0.0000H1.2000V0.0940H1.0800V0.0000Z" fill="#C4A23E"/><path d="M1.2000 0.0000H1.3200V0.0940H1.2000V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>9 of 11</strong> votes agreed · 1 pass · 1 disagree</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea">Close the REIT tax loophole</span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 10, Pass 1, Disagree 0, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.2000V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.2000 0.0000H1.3200V0.0940H1.2000V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>10 of 11</strong> votes agreed · 1 pass</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea"><span>Create a state-level Child Tax Credit</span><span class="gloss">Posted last — fewer people saw it</span></span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 8, Pass 1, Disagree 0, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.9600V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.9600 0.0000H1.0800V0.0940H0.9600V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>8 of 9</strong> votes agreed · 1 pass</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea">Strengthen the caregiver tax credit for kūpuna caregivers</span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 8, Pass 3, Disagree 0, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.9600V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.9600 0.0000H1.3200V0.0940H0.9600V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>8 of 11</strong> votes agreed · 3 passes</span>
+          </span>
+        </li>
+      </ol>
+    </div>
+
+    <div class="tier">
+      <div class="tier-head" style="position:relative">
+        <h3>Agreement, with some passes</h3>
+        <span class="note">Little opposition, 1/3–1/2 passed</span>
+      </div>
+      <ol class="items">
+        <li style="position:relative">
+          <span class="idea"><span>Fix last session's renewable energy tax cuts</span><span class="gloss">By reducing the proposed phase-out</span></span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 7, Pass 4, Disagree 0, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.8400V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.8400 0.0000H1.3200V0.0940H0.8400V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>7 of 11</strong> votes agreed · 4 passes</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea"><span>Keiki Rx</span><span class="gloss">Funding for first-year post-partum women, partly through TANF</span></span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 6, Pass 6, Disagree 0, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.7200V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.7200 0.0000H1.4400V0.0940H0.7200V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>6 of 12</strong> votes agreed · 6 passes</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea"><span>Pair a progressive revenue raiser with cutting the GET on food</span><span class="gloss">Net effect: a more progressive system overall</span></span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 7, Pass 5, Disagree 1, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.8400V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.8400 0.0000H1.4400V0.0940H0.8400V0.0000Z" fill="#C4A23E"/><path d="M1.4400 0.0000H1.5600V0.0940H1.4400V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>7 of 13</strong> votes agreed · 5 passes · 1 disagree</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea"><span>Reform the 2011 historic-home tax exemption</span><span class="gloss">City &amp; County of Honolulu — a county issue</span></span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 5, Pass 3, Disagree 0, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.6000V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.6000 0.0000H0.9600V0.0940H0.6000V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>5 of 8</strong> votes agreed · 3 passes</span>
+          </span>
+        </li>
+      </ol>
+    </div>
+
+    <div class="tier">
+      <div class="tier-head" style="position:relative">
+        <h3>Unresolved</h3>
+        <span class="note">Passes > agrees; 3 of the 5 disagree votes landed here</span>
+      </div>
+      <ol class="items">
+        <li style="position:relative">
+          <span class="idea"><span>Institute worldwide combined reporting</span><span class="gloss">Stops multinationals shifting profit offshore</span></span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 4, Pass 7, Disagree 0, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.4800V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.4800 0.0000H1.3200V0.0940H0.4800V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>4 of 11</strong> votes agreed · 7 passes</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea">Fix the child and dependent care tax credit</span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 3, Pass 7, Disagree 1, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.3600V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.3600 0.0000H1.2000V0.0940H0.3600V0.0000Z" fill="#C4A23E"/><path d="M1.2000 0.0000H1.3200V0.0940H1.2000V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>3 of 11</strong> votes agreed · 7 passes · 1 disagree</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea"><span>GET reform or replacement</span><span class="gloss">Largest dissent</span></span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 4, Pass 6, Disagree 1, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.4800V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.4800 0.0000H1.2000V0.0940H0.4800V0.0000Z" fill="#C4A23E"/><path d="M1.2000 0.0000H1.3200V0.0940H1.2000V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>4 of 11</strong> votes agreed · 6 passes · 1 disagree</span>
+          </span>
+        </li>
+        <li style="position:relative">
+          <span class="idea">Constitutional amendment to let the state tax high-value investment properties</span>
+          <span class="gauge">
+            <span class="ds-graphic ds-chart ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 1.92 0.094" class="chart" role="img" aria-label="Agree 3, Pass 8, Disagree 1, of 16" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H1.8990A0.0210 0.0210 0 0 1 1.9200 0.0210V0.0730A0.0210 0.0210 0 0 1 1.8990 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.3600V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.3600 0.0000H1.3200V0.0940H0.3600V0.0000Z" fill="#C4A23E"/><path d="M1.3200 0.0000H1.4400V0.0940H1.3200V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>3 of 12</strong> votes agreed · 8 passes · 1 disagree</span>
+          </span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tax credits vs revenue raisers</h2>
+    <p class="sub"></p>
+    <div class="famsplit">
+      <span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:544px"><svg viewBox="0 0 9.06 0.35" class="chart" role="img" aria-label="Tax credits &amp;amp; direct support 54, Revenue raisers 79, GET restructuring 24" style="display:block;width:100%;height:auto"><path d="M0.0310 0.0000H9.0290A0.0310 0.0310 0 0 1 9.0600 0.0310V0.3190A0.0310 0.0310 0 0 1 9.0290 0.3500H0.0310A0.0310 0.0310 0 0 1 0.0000 0.3190V0.0310A0.0310 0.0310 0 0 1 0.0310 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0310 0.0000H3.1162V0.3500H0.0310A0.0310 0.0310 0 0 1 0.0000 0.3190V0.0310A0.0310 0.0310 0 0 1 0.0310 0.0000Z" fill="#52796F"/><text x="1.5581" y="0.2380" text-anchor="middle" font-size="0.1750" font-weight="700" fill="#FFFFFF">54</text><path d="M3.1162 0.0000H7.6750V0.3500H3.1162V0.0000Z" fill="#8AA79E"/><text x="5.3956" y="0.2380" text-anchor="middle" font-size="0.1750" font-weight="700" fill="#1F2E2A">79</text><path d="M7.6750 0.0000H9.0290A0.0310 0.0310 0 0 1 9.0600 0.0310V0.3190A0.0310 0.0310 0 0 1 9.0290 0.3500H7.6750V0.0000Z" fill="#C3CEC5"/><text x="8.3675" y="0.2380" text-anchor="middle" font-size="0.1750" font-weight="700" fill="#1F2E2A">24</text></svg></div></span>
+      <div class="famsplit-key">
+        <span><i class="swatch" style="background:var(--fam1)"></i> <span>Tax credits &amp; direct support · 5 ideas</span></span>
+        <span><i class="swatch" style="background:var(--fam2)"></i> <span>Revenue raisers · 7 ideas</span></span>
+        <span><i class="swatch" style="background:var(--fam3)"></i> <span>GET restructuring · 2 ideas</span></span>
+      </div>
+      <p class="famsplit-cap">Share of all votes cast, by family. Revenue raisers took half the coalition's attention; the two GET questions took a sixth.</p>
+    </div>
+    <div class="groups">
+      <div class="group" style="position:relative">
+        <span class="who">5 ideas · 54 votes</span>
+        <h3>Tax credits &amp; direct support</h3>
+        <span class="gauge">
+          <span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 35, Pass 18, Disagree 1" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.6204V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.6204 0.0000H2.4537V0.0940H1.6204V0.0000Z" fill="#C4A23E"/><path d="M2.4537 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.4537V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>35 of 54</strong> votes agreed · 18 passes · 1 disagree</span>
+        </span>
+        <p>Saving the expiring working family credits, a state Child Tax Credit, the kūpuna caregiver credit, Keiki Rx, and the child &amp; dependent care credit. Strongest at the top (10 of 11 on the expiring credits); the child &amp; dependent care fix is the least agreed item.</p>
+      </div>
+      <div class="group" style="position:relative">
+        <span class="who">7 ideas · 79 votes</span>
+        <h3>Revenue raisers</h3>
+        <span class="gauge">
+          <span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 51, Pass 26, Disagree 2" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.6139V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.6139 0.0000H2.4367V0.0940H1.6139V0.0000Z" fill="#C4A23E"/><path d="M2.4367 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.4367V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>51 of 79</strong> votes agreed · 26 passes · 2 disagrees</span>
+        </span>
+        <p>The renewable energy fix, conveyance tax, capital gains, the REIT loophole, worldwide combined reporting, the historic-home exemption, and the ConAm.</p>
+      </div>
+      <div class="group" style="position:relative">
+        <span class="who">2 ideas · 24 votes</span>
+        <h3>GET restructuring</h3>
+        <span class="gauge">
+          <span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 11, Pass 11, Disagree 2" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.1458V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.1458 0.0000H2.2917V0.0940H1.1458V0.0000Z" fill="#C4A23E"/><path d="M2.2917 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.2917V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>11 of 24</strong> votes agreed · 11 passes · 2 disagrees</span>
+        </span>
+        <p>Pairing a progressive raiser with a GET cut on food, and GET reform or replacement.</p>
+      </div>
+    </div>
+    <p class="sub"><strong>Credits and raisers poll the same.</strong> 65% agree on the credit side, 65% on the revenue side, with one and two disagree votes respectively — no meaningful gap. However, GET restructuring polled at 46%, with as many passes as agrees and two disagree votes.</p>
+  </section>
+
+  <section>
+    <h2>Priorities by bucket</h2>
+    <p class="sub">The same 14 ideas, grouped by the Coalition's three 2027 priority buckets: tax the wealthy, tax corporations, and tax credits and assistance.</p>
+    <div class="famsplit">
+      <span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:544px"><svg viewBox="0 0 9.06 0.35" class="chart" role="img" aria-label="Tax the wealthy 46, Tax corporations 22, Tax credits and assistance 65" style="display:block;width:100%;height:auto"><path d="M0.0310 0.0000H9.0290A0.0310 0.0310 0 0 1 9.0600 0.0310V0.3190A0.0310 0.0310 0 0 1 9.0290 0.3500H0.0310A0.0310 0.0310 0 0 1 0.0000 0.3190V0.0310A0.0310 0.0310 0 0 1 0.0310 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0310 0.0000H3.1335V0.3500H0.0310A0.0310 0.0310 0 0 1 0.0000 0.3190V0.0310A0.0310 0.0310 0 0 1 0.0310 0.0000Z" fill="#3B6E8F"/><text x="1.5668" y="0.2380" text-anchor="middle" font-size="0.1750" font-weight="700" fill="#FFFFFF">46</text><path d="M3.1335 0.0000H4.6322V0.3500H3.1335V0.0000Z" fill="#A65D3D"/><text x="3.8829" y="0.2380" text-anchor="middle" font-size="0.1750" font-weight="700" fill="#FFFFFF">22</text><path d="M4.6322 0.0000H9.0290A0.0310 0.0310 0 0 1 9.0600 0.0310V0.3190A0.0310 0.0310 0 0 1 9.0290 0.3500H4.6322V0.0000Z" fill="#C99A3E"/><text x="6.8461" y="0.2380" text-anchor="middle" font-size="0.1750" font-weight="700" fill="#1F2E2A">65</text></svg></div></span>
+      <div class="famsplit-key">
+        <span><i class="swatch" style="background:var(--bkt1)"></i> <span>Tax the wealthy · 4 ideas</span></span>
+        <span><i class="swatch" style="background:var(--bkt2)"></i> <span>Tax corporations · 2 ideas</span></span>
+        <span><i class="swatch" style="background:var(--bkt3)"></i> <span>Tax credits and assistance · 6 ideas</span></span>
+      </div>
+      <p class="famsplit-cap">Share of the votes cast on the 12 bucketed ideas. The two GET ideas aren't part of this split — see below.</p>
+    </div>
+    <div class="groups">
+      <div class="group" style="position:relative">
+        <span class="who">4 ideas · 46 votes</span>
+        <h3>Tax the wealthy</h3>
+        <span class="gauge">
+          <span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 30, Pass 14, Disagree 2" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.6304V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.6304 0.0000H2.3913V0.0940H1.6304V0.0000Z" fill="#C4A23E"/><path d="M2.3913 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.3913V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>30 of 46</strong> votes agreed · 14 passes · 2 disagrees</span>
+        </span>
+        <p>The four ideas, ranked by votes agreed:</p>
+        <ol class="items" style="position:relative"><li style="position:relative"><span class="idea">Conveyance tax reform</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 13, Pass 2, Disagree 0" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H2.1667V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M2.1667 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.1667V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>13 of 15</strong> votes agreed · 2 passes</span></span></li><li style="position:relative"><span class="idea">Tax capital gains at the same rate as ordinary income</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 9, Pass 1, Disagree 1" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H2.0455V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M2.0455 0.0000H2.2727V0.0940H2.0455V0.0000Z" fill="#C4A23E"/><path d="M2.2727 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.2727V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>9 of 11</strong> votes agreed · 1 pass · 1 disagree</span></span></li><li style="position:relative"><span class="idea">Reform the 2011 historic-home tax exemption</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 5, Pass 3, Disagree 0" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.5625V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.5625 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H1.5625V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>5 of 8</strong> votes agreed · 3 passes</span></span></li><li style="position:relative"><span class="idea">Constitutional amendment to tax high-value investment properties (ConAm)</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 3, Pass 8, Disagree 1" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.6250V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.6250 0.0000H2.2917V0.0940H0.6250V0.0000Z" fill="#C4A23E"/><path d="M2.2917 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.2917V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>3 of 12</strong> votes agreed · 8 passes · 1 disagree</span></span></li></ol>
+      </div>
+      <div class="group" style="position:relative">
+        <span class="who">2 ideas · 22 votes</span>
+        <h3>Tax corporations</h3>
+        <span class="gauge">
+          <span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 14, Pass 8, Disagree 0" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.5909V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.5909 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H1.5909V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>14 of 22</strong> votes agreed · 8 passes</span>
+        </span>
+        <p>The two ideas, ranked by votes agreed:</p>
+        <ol class="items" style="position:relative"><li style="position:relative"><span class="idea">Close the REIT tax loophole</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 10, Pass 1, Disagree 0" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H2.2727V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M2.2727 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.2727V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>10 of 11</strong> votes agreed · 1 pass</span></span></li><li style="position:relative"><span class="idea">Institute worldwide combined reporting</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 4, Pass 7, Disagree 0" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.9091V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.9091 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.9091V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>4 of 11</strong> votes agreed · 7 passes</span></span></li></ol>
+      </div>
+      <div class="group" style="position:relative">
+        <span class="who">6 ideas · 65 votes</span>
+        <h3>Tax credits and assistance</h3>
+        <span class="gauge">
+          <span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 42, Pass 22, Disagree 1" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.6154V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.6154 0.0000H2.4615V0.0940H1.6154V0.0000Z" fill="#C4A23E"/><path d="M2.4615 0.0000H2.4808A0.0192 0.0192 0 0 1 2.5000 0.0192V0.0748A0.0192 0.0192 0 0 1 2.4808 0.0940H2.4615V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>42 of 65</strong> votes agreed · 22 passes · 1 disagree</span>
+        </span>
+        <p>The six ideas, ranked by votes agreed:</p>
+        <ol class="items" style="position:relative"><li style="position:relative"><span class="idea">Save the working family tax credits set to expire</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 10, Pass 1, Disagree 0" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H2.2727V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M2.2727 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.2727V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>10 of 11</strong> votes agreed · 1 pass</span></span></li><li style="position:relative"><span class="idea">Create a state-level Child Tax Credit</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 8, Pass 1, Disagree 0" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H2.2222V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M2.2222 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.2222V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>8 of 9</strong> votes agreed · 1 pass</span></span></li><li style="position:relative"><span class="idea">Strengthen the caregiver tax credit for kūpuna caregivers</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 8, Pass 3, Disagree 0" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.8182V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.8182 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H1.8182V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>8 of 11</strong> votes agreed · 3 passes</span></span></li><li style="position:relative"><span class="idea">Fix last session's renewable energy tax cuts</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 7, Pass 4, Disagree 0" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.5909V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.5909 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H1.5909V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>7 of 11</strong> votes agreed · 4 passes</span></span></li><li style="position:relative"><span class="idea">Keiki Rx</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 6, Pass 6, Disagree 0" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H1.2500V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M1.2500 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H1.2500V0.0000Z" fill="#C4A23E"/></svg></div></span><span class="tally"><strong>6 of 12</strong> votes agreed · 6 passes</span></span></li><li style="position:relative"><span class="idea">Fix the child and dependent care tax credit</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 2.5 0.094" class="chart" role="img" aria-label="Agree 3, Pass 7, Disagree 1" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H0.6818V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M0.6818 0.0000H2.2727V0.0940H0.6818V0.0000Z" fill="#C4A23E"/><path d="M2.2727 0.0000H2.4790A0.0210 0.0210 0 0 1 2.5000 0.0210V0.0730A0.0210 0.0210 0 0 1 2.4790 0.0940H2.2727V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>3 of 11</strong> votes agreed · 7 passes · 1 disagree</span></span></li></ol>
+      </div>
+    </div>
+    <div class="get-callout" style="position:relative">
+      <span class="who"><span>2 ideas · 24 votes</span> <span>· not part of a bucket</span></span>
+      <h3>GET on food</h3>
+      <span class="gauge">
+        <span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 9 0.094" class="chart" role="img" aria-label="Agree 11, Pass 11, Disagree 2" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H8.9790A0.0210 0.0210 0 0 1 9.0000 0.0210V0.0730A0.0210 0.0210 0 0 1 8.9790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H4.1250V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M4.1250 0.0000H8.2500V0.0940H4.1250V0.0000Z" fill="#C4A23E"/><path d="M8.2500 0.0000H8.9790A0.0210 0.0210 0 0 1 9.0000 0.0210V0.0730A0.0210 0.0210 0 0 1 8.9790 0.0940H8.2500V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>11 of 24</strong> votes agreed · 11 passes · 2 disagrees</span>
+      </span>
+      <p>Not one of the Coalition's three buckets — its own track per the Charter. Ranked by votes agreed:</p>
+      <ol class="items" style="position:relative"><li style="position:relative"><span class="idea">Pair a progressive revenue raiser with cutting the GET on food</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 9 0.094" class="chart" role="img" aria-label="Agree 7, Pass 5, Disagree 1" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H8.9790A0.0210 0.0210 0 0 1 9.0000 0.0210V0.0730A0.0210 0.0210 0 0 1 8.9790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H4.8462V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M4.8462 0.0000H8.3077V0.0940H4.8462V0.0000Z" fill="#C4A23E"/><path d="M8.3077 0.0000H8.9790A0.0210 0.0210 0 0 1 9.0000 0.0210V0.0730A0.0210 0.0210 0 0 1 8.9790 0.0940H8.3077V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>7 of 13</strong> votes agreed · 5 passes · 1 disagree</span></span></li><li style="position:relative"><span class="idea">GET reform or replacement</span><span class="gauge"><span class="ds-graphic ds-meter" style="display:block;line-height:0;width:100%"><div class="ds-chart-scroll" style="--ds-chart-min:0px"><svg viewBox="0 0 9 0.094" class="chart" role="img" aria-label="Agree 4, Pass 6, Disagree 1" preserveAspectRatio="none" style="display:block;width:100%;height:0.094in"><path d="M0.0210 0.0000H8.9790A0.0210 0.0210 0 0 1 9.0000 0.0210V0.0730A0.0210 0.0210 0 0 1 8.9790 0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" style="fill:var(--ds-meter-track,#EDF1EC)"/><path d="M0.0210 0.0000H3.2727V0.0940H0.0210A0.0210 0.0210 0 0 1 0.0000 0.0730V0.0210A0.0210 0.0210 0 0 1 0.0210 0.0000Z" fill="#52796F"/><path d="M3.2727 0.0000H8.1818V0.0940H3.2727V0.0000Z" fill="#C4A23E"/><path d="M8.1818 0.0000H8.9790A0.0210 0.0210 0 0 1 9.0000 0.0210V0.0730A0.0210 0.0210 0 0 1 8.9790 0.0940H8.1818V0.0000Z" fill="#A8603F"/></svg></div></span><span class="tally"><strong>4 of 11</strong> votes agreed · 6 passes · 1 disagree</span></span></li></ol>
+    </div>
+    <p class="sub">Buckets aren't ranked by how much they agreed — they're how the Coalition organizes its 2027 ballot. See "Tax credits vs revenue raisers" above for the poll's own weight-of-attention split.</p>
+  </section>
+
+  <footer style="position:relative">
+    <span>Source: Pol.is conversation <a href="https://pol.is/7bvwfhpf8x">7bvwfhpf8x</a> · votes as of 27 August 2026 (opened 30 July) · 28 members invited, 16 voted</span>
+    <span>Prepared for the Tax Fairness Coalition</span>
+  </footer>
+
+</div>
+
+<style>.page{width:12.5in;min-height:0}@page{size:12.5in auto;margin:0}</style>
+</body>
